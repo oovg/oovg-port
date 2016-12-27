@@ -3,30 +3,32 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
-import { RouterModule, Routes } from '@angular/router';
 
+import { router } from './app.routes';
+
+import { HomeComponent }   from './components/home/home.component';
+import { NotFoundComponent }   from './components/not-found/not-found.component';
 import { AboutComponent }   from './components/about/about.component';
-import { WorkComponent }   from './components/work/work.component';
-
-export const routes: Routes = [
-  { path: 'about', component: AboutComponent },
-  { path: 'work', component: WorkComponent }
-];
-
+import { WorksComponent }   from './components/works/works.component';
+import { WorkDetailComponent }   from './components/works/work-detail.component';
+import { WorksService }   from './components/works/works.service';
 
 @NgModule({
   declarations: [
     AppComponent,
+    HomeComponent,
     AboutComponent,
-    WorkComponent
+    WorksComponent,
+    WorkDetailComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot(routes)
+    router
   ],
-  providers: [],
+  providers: [WorksService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
