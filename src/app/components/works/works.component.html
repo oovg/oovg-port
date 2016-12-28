@@ -1,0 +1,13 @@
+<!-- List the Works -->
+<div class="works">
+  <div class="works-item" *ngFor="let work of works" [ngStyle]="{'background-image': 'url(' + work.img + ')'}">
+    
+    <a href="#" [routerLink]="['/works', work.id]">
+      <div class="overlay"
+           [ngClass]="{'red': work.type==='Branding', 'teal': work.type==='Print'}">
+        <h3 class="title">{{work.title}}</h3>
+      </div>
+    </a>
+    
+  </div>
+</div>

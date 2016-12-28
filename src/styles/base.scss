@@ -1,7 +1,21 @@
-// Base Styles
+// Base
+
+// Imports
+
+@import 'variables';
+@import 'grid';
+@import 'loader';
+@import 'works';
+@import 'media';
+
+// Styles
 
 body {
   font-family: 'sofia-pro', sans-serif;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 p { 
@@ -13,11 +27,42 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 900;
 }
 
+
+
+img { max-width: 100%; }
+
+a { 
+  text-decoration: none;
+    color: $salmon;
+    border-bottom: 2px solid $salmon;
+  &:hover {
+    color: $teal;
+    border-bottom: 2px solid $teal;
+  }
+}
+
+// Header
+
+.header {
+  text-align: center;
+  a {
+    border: none;
+  }
+  .logo {
+    margin: 25px;
+    width: auto;
+    height: 80px;
+  }
+}
+
+// Nav
+
 nav {
+  text-align: center;
   a {
     display: inline-block;
     margin-right: 30px;
   }
 }
 
-img { max-width: 100%; }
+

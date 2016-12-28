@@ -4,20 +4,12 @@ import { WorksService } from './works.service';
 
 @Component({
   selector: 'works-list',
-  template: `
-  <ul>
-    <li *ngFor="let work of works">
-        <a href="#" [routerLink]="['/works', work.id]">
-      {{work.title}}
-      </a>
-    </li>
-  </ul>
-  `
+  templateUrl: './works.component.html'
 })
 export class WorksComponent implements OnInit{
   works: Work[] = [];
 
-  constructor(private worksService : WorksService){ }
+  constructor(private worksService: WorksService){ }
 
   ngOnInit(){
     this.works = this.worksService.getAll();
