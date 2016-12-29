@@ -6,16 +6,15 @@
   margin: 50px 0 0 0;
   .works-item { 
     display: inline-block;
-    width: 33%;
+    width: 15%;
+    margin: 0.5%;
     text-align: center;
     height: 420px;
     background-size: cover;
     background-position: center center;
     position: relative;
-    -webkit-filter: grayscale(100%);
     .overlay {
-      -webkit-filter: grayscale(0%);
-      opacity:1;
+      opacity:0;
       position: absolute;
       top: 0;
       left: 0;
@@ -28,22 +27,61 @@
         background-color: rgba(142,184,208,0.85);
       }
       &:hover {
-        opacity: 0;
+        opacity: 1;
+        transition: all .1s linear;
       }
-    }
-    .title {
-      position: absolute;
-      top: 25%;
-      bottom: -25%;
-      width: 100%;
-      text-align: center;
-      color: #fff;
-      font-size: 2.5em;
+      .container {
+        position: absolute;
+        top: 25px;
+        width: 100%;
+        .title { 
+          text-align: center;
+          color: #fff;
+          font-size: 2.5em;
+        }
+        .caption {
+          color: #fff;
+        }
+      }
     }
   }
 }
 
 .work-img {
   width: 100%;
+}
+
+// Key
+
+.key {
+  margin: 0 auto;
+  width: 400px;
+  .red {
+    width: 40px;
+    height: 40px;
+    background-color: $salmon;
+    float: left;
+    margin-right: 8px;
+  }
+  .teal {
+    width: 40px;
+    height: 40px;
+    background-color: $teal;
+    float: left;
+    margin-right: 8px;
+  }
+  h5 {
+    float: none;
+    text-align: left;
+  }
+}
+
+
+// Work-detail
+
+.work {
+  .type {
+    border: 2px solid;
+  }
 }
 
