@@ -1,6 +1,9 @@
 <section *ngIf="work" class="work">
   <h1 class="title">{{work.title}}</h1>
-  <h3 class="type">{{work.type}}</h3>
+  <div class="tags">
+    <div class="item">{{work.type}}</div>
+  </div>
+  <p class="caption">{{work.caption}}</p>
   <div *ngFor="let image of work.images" class="work-img">
     <img src="{{image.url}}"/>
   </div>

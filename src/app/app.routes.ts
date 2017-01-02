@@ -1,6 +1,7 @@
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
+import { ConnectComponent } from './components/connect/connect.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { WorksComponent } from './components/works/works.component';
 import { WorkDetailComponent } from './components/works/work-detail.component'; 
@@ -22,6 +23,10 @@ const routes: Routes = [
   {
     path: 'about',
     component: AboutComponent,
+  },
+  {
+    path: 'connect',
+    component: ConnectComponent,
   },
   {
     path: '**',

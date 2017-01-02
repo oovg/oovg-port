@@ -1,6 +1,12 @@
-<div class="key">
-  <div class="red"></div><h5>Branding</h5>
-  <div class="teal"></div><h5>Print</h5>
+<section class="intro">
+  <div class=""><h1>The Office of Ven Gist produces considered design along the entire design lifecyle.</h1></div>
+</section>
+<div class="tags">
+  <div class="item teal">Brand</div>
+  <div class="item sky">Product</div>
+  <div class="item salmon">Print</div>
+  <div class="item evergreen">Illustration</div>
+  <div class="item warm-grey">Goods</div>
 </div>
 <!-- List the Works -->
 <div class="works">
@@ -8,10 +14,11 @@
     
     <a href="#" [routerLink]="['/works', work.id]">
       <div class="overlay"
-           [ngClass]="{'red': work.type==='Branding', 'teal': work.type==='Print'}">
+           [ngClass]="{'salmon': work.type==='Branding', 'teal': work.type==='Print'}">
         <div class="container">
           <h3 class="title">{{work.title}}</h3>
           <h6 class="caption">{{work.caption}}</h6>
+          <a href="" [routerLink]="['/works', work.id]" class="button">View Context</a>
         </div>
       </div>
     </a>
