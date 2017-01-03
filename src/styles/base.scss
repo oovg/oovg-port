@@ -87,4 +87,33 @@ a.button {
   padding: 10px 15px;
 }
 
+// Animations
+
+.route-transition {
+    animation-duration: 2s;
+    opacity: 0;
+    animation-name: fadeOut,fadeIn;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
 

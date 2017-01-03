@@ -1,13 +1,14 @@
 <section class="header">
-  <a class="" [routerLink]="['/']"><img class="logo" src="../assets/images/oovg-logo-primary.png"></a>
+  <a class="" [routerLink]="['/']" [routerLinkActive]="['active']"><img class="logo" src="../assets/images/oovg-logo-primary.png"></a>
 </section>
 
 <nav>
-  <a class="" [routerLink]="['/works']">Works</a>
-  <a class="" [routerLink]="['/about']">About</a>
-  <a class="" [routerLink]="['/connect']">Connect</a>
+  <a class="" [routerLink]="['/works']" [routerLinkActive]="['active']">Works</a>
+  <a class="" [routerLink]="['/about']" [routerLinkActive]="['active']">About</a>
+  <a class="" [routerLink]="['/connect']" [routerLinkActive]="['active']">Connect</a>
 </nav>
 
-<section class="page">
-  <router-outlet></router-outlet>
-</section>
+
+<div class="page">
+  <router-outlet [@routerTransition]=""></router-outlet>
+</div>

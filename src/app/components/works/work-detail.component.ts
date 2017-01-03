@@ -4,8 +4,13 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { Work } from './work.model';
 import { WorksService } from './works.service';
 
+import { routerTransition } from '../../router.animations';
+
+
 @Component({
   templateUrl: './work-detail.component.html',
+  animations: [routerTransition()],
+  host: {'[@routerTransition]': ''}
 })
 export class WorkDetailComponent implements OnInit, OnDestroy {
     work: Work;
