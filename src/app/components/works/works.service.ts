@@ -94,6 +94,36 @@ const Works: Work[] = [
           }
         ]
       },
+      {id: 7, 
+       title: 'Iceland', 
+       type: 'Illustration',
+       caption: 'Broken Camera = Illustrations',
+       images: [] = [
+          {
+            id: 1,
+            url: '../assets/images/work/iceland/iceland-jokulsarlon.jpg'
+          },
+          {
+            id: 2,
+            url: '../assets/images/work/iceland/iceland-drangshild.jpg'
+          }
+        ]
+      },
+      {id: 8, 
+       title: 'Chromatic Guide to Gear Ratios', 
+       type: 'Print',
+       caption: 'Interactive Print',
+       images: [] = [
+          {
+            id: 1,
+            url: '../assets/images/work/ratios/ratios-feat.jpg'
+          },
+          {
+            id: 2,
+            url: '../assets/images/work/ratios/ratios-02.jpg'
+          }
+        ]
+      },
     ];
 
 

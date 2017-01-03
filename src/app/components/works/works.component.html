@@ -14,7 +14,7 @@
     
     <a href="#" [routerLink]="['/works', work.id]">
       <div class="overlay"
-           [ngClass]="{'salmon': work.type==='Branding', 'teal': work.type==='Print'}">
+           [ngClass]="{'salmon': work.type==='Branding', 'teal': work.type==='Print', 'evergreen': work.type==='Illustration'}">
         <div class="container">
           <h3 class="title">{{work.title}}</h3>
           <h6 class="caption">{{work.caption}}</h6>
