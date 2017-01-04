@@ -7,7 +7,6 @@ import { routerTransition } from './router.animations';
   styleUrls: ['./app.component.scss'],
   animations: [routerTransition()],
   host: {'[@routerTransition]': ''}
-  
 })
 export class AppComponent {
 

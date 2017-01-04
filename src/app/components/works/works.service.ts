@@ -4,6 +4,36 @@ import { Image } from './work.model';
 
 const Works: Work[] = [
       {id: 1, 
+        title: 'Civic', 
+        type: 'Branding', 
+        caption: 'Data for the people',
+        images: [] = [
+          {
+            id: 1,
+            url: '../assets/images/work/civic/civic-feat.jpg'
+          },
+          {
+            id: 2,
+            url: '../assets/images/work/civic/civic-02.jpg'
+          }
+        ]
+      },
+      {id: 2, 
+       title: 'LandApart', 
+       type: 'Branding', 
+       caption: 'Under the stars',
+       images: [] = [
+          {
+            id: 1,
+            url: '../assets/images/work/landapart/landapart-feat.jpg'
+          },
+          {
+            id: 2,
+            url: '../assets/images/work/landapart/landapart-02.jpg'
+          }
+        ]
+      },
+      {id: 3, 
         title: 'Bloomsbury Anthology of Aesthetics', 
         type: 'Print', 
         caption: 'Harmony vs. Disharmony',
@@ -18,7 +48,7 @@ const Works: Work[] = [
           }
         ]
       },
-      {id: 2, 
+      {id: 4, 
        title: 'Landfill Quarterly', 
        type: 'Branding', 
        caption: 'Subscribe to Ephemera',
@@ -34,22 +64,7 @@ const Works: Work[] = [
         ]
         
       }, 
-      {id: 3, 
-       title: 'LandApart', 
-       type: 'Branding', 
-       caption: 'Under the stars',
-       images: [] = [
-          {
-            id: 1,
-            url: '../assets/images/work/landapart/landapart-feat.jpg'
-          },
-          {
-            id: 2,
-            url: '../assets/images/work/landapart/landapart-02.jpg'
-          }
-        ]
-      },
-      {id: 4, 
+      {id: 5, 
        title: 'Hill or no Hill', 
        type: 'Print',
        caption: 'San Francisco printed in 3D',
@@ -64,7 +79,7 @@ const Works: Work[] = [
           }
         ]
       },
-      {id: 5, 
+      {id: 6, 
        title: 'Hippy Shit', 
        type: 'Print',
        caption: 'Make believe it is your first time',
@@ -79,7 +94,7 @@ const Works: Work[] = [
           }
         ]
       },
-      {id: 6, 
+      {id: 7, 
        title: 'University of Hawaii', 
        type: 'Branding',
        caption: 'Western Philosophy, meet Eastern Philosophy',
@@ -94,7 +109,7 @@ const Works: Work[] = [
           }
         ]
       },
-      {id: 7, 
+      {id: 8, 
        title: 'Iceland', 
        type: 'Illustration',
        caption: 'Broken Camera = Illustrations',
@@ -109,7 +124,7 @@ const Works: Work[] = [
           }
         ]
       },
-      {id: 8, 
+      {id: 9, 
        title: 'Chromatic Guide to Gear Ratios', 
        type: 'Print',
        caption: 'Interactive Print',
