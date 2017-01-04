@@ -1,9 +1,18 @@
+<section class="feature">
+  <div class="content">
+    <p><a [routerLink]="['/works']" [routerLinkActive]="['active']">Works</a> / {{work.title}}</p>
+    <h1>{{work.caption}}</h1>
+  </div>
+</section>
+
 <section *ngIf="work" class="work">
+  
   <h1 class="title">{{work.title}}</h1>
   <div class="tags">
     <div class="item">{{work.type}}</div>
   </div>
   <p class="caption">{{work.caption}}</p>
+  
   <div *ngFor="let image of work.images" class="work-img">
     <img src="{{image.url}}"/>
   </div>

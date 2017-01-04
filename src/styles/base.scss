@@ -3,9 +3,12 @@
 // Imports
 
 @import 'variables';
-@import 'grid';
-@import 'typography';
+@import 'mixins/utilities';
+
 @import 'loader';
+@import 'grid';
+@import 'header';
+@import 'typography';
 @import 'works';
 @import 'media';
 
@@ -57,30 +60,6 @@ a {
   }
 }
 
-// Header
-
-.header {
-  text-align: center;
-  .logo {
-    margin: 25px;
-    width: auto;
-    height: 80px;
-    border: none;
-    
-  }
-}
-
-// Nav
-
-nav {
-  text-align: center;
-  margin: 25px;
-  a {
-    width: auto;
-    display: inline-block;
-    margin: 0 15px 0 0;
-  }
-}
 
 // Buttons
 

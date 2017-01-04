@@ -1,0 +1,32 @@
+// Header
+
+.header {
+  position: fixed;
+  width: 100%;
+  margin: 0;
+  padding: 25px 50px;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  .logo {
+    position: relative;
+    width: auto;
+    height: 80px;
+    border: none;
+    
+  }
+}
+
+// Nav
+
+nav {
+  position: relative;
+  width: auto;
+  @include vertical-align();
+  a {
+    font-size: 1.35em;
+    width: auto;
+    display: inline-block;
+    margin: 0 15px 0 0;
+  }
+}

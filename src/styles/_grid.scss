@@ -3,8 +3,9 @@
 .page {
   width: 100%;
   text-align: center;
-  .container {
-    margin: 50px auto;
+  margin-top: 100px;
+  >.container {
+    margin: 0 auto;
     max-width: 1200px;
     &.text {
       max-width: 600px !important;
@@ -16,4 +17,18 @@
   text-align: left;
   margin: 0 auto;
   max-width: 600px; 
+}
+
+// Feature
+
+section.feature {
+  height: 100vh;
+  width: calc(100%-100px);
+  margin: 50px;
+  background-color: $salmon;
+  >.content {
+    @include vertical-align(relative);
+    max-width: 800px;
+    margin: 0 auto;
+  }
 }
