@@ -25,9 +25,12 @@ section.feature {
   height: 100vh;
   width: calc(100%-100px);
   margin: 50px;
-  background-color: $salmon;
+  background-color: #fff;
+  background-size: cover;
+  background-position: center center;
   >.content {
     @include vertical-align(relative);
+    padding: 50px;
     max-width: 800px;
     margin: 0 auto;
   }

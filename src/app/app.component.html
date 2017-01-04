@@ -1,4 +1,4 @@
-<section class="header">
+<section class="header" [ngClass]="{'hide': (direction==='down' && lastScrollTop>10)}">
   <a class="logo" [routerLink]="['/']" [routerLinkActive]="['active']"><img class="logo" src="../assets/images/oovg-logo-primary.png"></a>
   <nav>
     <a class="" [routerLink]="['/works']" [routerLinkActive]="['active']">Work</a>

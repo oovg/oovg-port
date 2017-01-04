@@ -1,4 +1,4 @@
-<section class="feature">
+<section class="feature" [ngStyle]="{'background-image': 'url(' + work.images[0].url + ')'}">
   <div class="content">
     <p><a [routerLink]="['/works']" [routerLinkActive]="['active']">Works</a> / {{work.title}}</p>
     <h1>{{work.caption}}</h1>
