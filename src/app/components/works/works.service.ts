@@ -7,6 +7,7 @@ const Works: Work[] = [
         title: 'Civic', 
         type: 'Branding', 
         caption: 'Data for the people',
+        color: '220f25',
         images: [] = [
           {
             id: 1,
@@ -22,6 +23,7 @@ const Works: Work[] = [
        title: 'LandApart', 
        type: 'Branding', 
        caption: 'Under the stars',
+       color: '649553',
        images: [] = [
           {
             id: 1,
@@ -37,6 +39,7 @@ const Works: Work[] = [
         title: 'Bloomsbury Anthology of Aesthetics', 
         type: 'Print', 
         caption: 'Harmony vs. Disharmony',
+       color: '220f25',
         images: [] = [
           {
             id: 1,
@@ -52,6 +55,7 @@ const Works: Work[] = [
        title: 'Landfill Quarterly', 
        type: 'Branding', 
        caption: 'Subscribe to Ephemera',
+       color: '220f25',
        images: [] = [
           {
             id: 1,
@@ -68,6 +72,7 @@ const Works: Work[] = [
        title: 'Hill or no Hill', 
        type: 'Print',
        caption: 'San Francisco printed in 3D',
+       color: '220f25',
        images: [] = [
           {
             id: 1,
@@ -83,6 +88,7 @@ const Works: Work[] = [
        title: 'Hippy Shit', 
        type: 'Print',
        caption: 'Make believe it is your first time',
+       color: '220f25',
        images: [] = [
           {
             id: 1,
@@ -98,6 +104,7 @@ const Works: Work[] = [
        title: 'University of Hawaii', 
        type: 'Branding',
        caption: 'Western Philosophy, meet Eastern Philosophy',
+       color: '220f25',
        images: [] = [
           {
             id: 1,
@@ -113,6 +120,7 @@ const Works: Work[] = [
        title: 'Iceland', 
        type: 'Illustration',
        caption: 'Broken Camera = Illustrations',
+       color: '220f25',
        images: [] = [
           {
             id: 1,
@@ -128,6 +136,7 @@ const Works: Work[] = [
        title: 'Chromatic Guide to Gear Ratios', 
        type: 'Print',
        caption: 'Interactive Print',
+       color: '220f25',
        images: [] = [
           {
             id: 1,

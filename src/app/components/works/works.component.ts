@@ -9,7 +9,9 @@ import { routerTransition } from '../../router.animations';
   animations: [routerTransition()],
   host: {'[@routerTransition]': ''}
 })
+
 export class WorksComponent implements OnInit{
+  filter: any[] = ['Branding'];
   works: Work[] = [];
 
   constructor(private worksService: WorksService){ }
