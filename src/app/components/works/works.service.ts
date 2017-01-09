@@ -45,10 +45,11 @@ const Works: Work[] = [
       {id: 3, 
         title: 'Bloomsbury Anthology of Aesthetics', 
         types: [] = [
-          { name: 'Print' }
+          { name: 'Print' },
+          { name: 'Photo Illustration' }
         ], 
         caption: 'Harmony vs. Disharmony',
-       color: '220f25',
+        color: 'dc363a',
         images: [] = [
           {
             id: 1,
@@ -66,7 +67,7 @@ const Works: Work[] = [
           { name: 'Branding' },
           { name: 'Print' }
         ],
-       caption: 'Subscribe to Ephemera',
+       caption: 'Ephemera Subscription Service',
        color: '220f25',
        images: [] = [
           {
