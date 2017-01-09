@@ -2,28 +2,13 @@
   <div class="content"><h1>OoVG produces considered design across multiple disciplines focused on concept, utility, and identity.</h1>
   <h4>Below is a selection of recent projects.</h4></div>
 </section>
-<!--<div class="tags">
-  <label class="item teal"><input value="branding" id="branding" type="checkbox" checked>Branding</label>
-  <div class="item sky"><input type="checkbox" id="product" value="product">Product</div>
-  <div class="item salmon">Print</div>
-  <div class="item evergreen">Illustration</div>
-  <div class="item warm-grey">Goods</div>
-</div>
-  {{work.checked}}-->
-<div class="tags">
-<p-checkbox class="item" name="groupname" value="Branding" label="Branding" [(ngModel)]="filter"></p-checkbox>
-<p-checkbox class="item" name="groupname" value="Print" label="Print" [(ngModel)]="filter"></p-checkbox>
-<p-checkbox class="item" name="groupname" value="Product" label="Product" [(ngModel)]="filter"></p-checkbox>
-<!-- List the Works -->
 
-</div>
+<!-- List the Works -->
 
 <div class="works">
   
-  
   <div *ngFor="let work of works" class="work">
-    <div class="works-item" *ngIf="work.types[0].name==='' + filter + ''" [ngStyle]="{'background-image': 'url(' + work.images[0].url + ')'}">
-
+    <div class="works-item" [ngStyle]="{'background-image': 'url(' + work.images[0].url + ')'}">
       <a href="#" [routerLink]="['/works', work.id]">
         <div class="overlay"
              [ngClass]="{'salmon': work.types[0].name==='Branding', 'teal': work.types[0].name==='Print', 'evergreen': work.types[0].name==='Illustration'}">
@@ -34,7 +19,7 @@
           </div>
         </div>
       </a>
-
     </div>
   </div>
+  
 </div>
