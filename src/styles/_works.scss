@@ -1,7 +1,7 @@
 // Works
 
 .works { 
-  margin: 50px 0 0 0;
+  margin: 20px 0 0 0;
   width: 100%;
   position: relative;
 }
@@ -66,7 +66,7 @@
 // Tags
 
 .tags {
-  margin: 50px auto;
+  margin: 30px auto;
   width: 100%;
   .item { 
     width: auto;
@@ -78,8 +78,11 @@
     line-height: 30px;
     padding: 5px 10px;
     margin: -1px;
-    border-top: 2px solid; 
+    border: 2px solid; 
     transition: all .1s linear;
+    &:not(last-child) {
+      margin-right: 10px;
+    }
     
     &.salmon {
       border-color: $salmon;

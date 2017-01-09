@@ -29,6 +29,7 @@ section.feature {
   background-position: center center;
   &.half {
     height: 50vh;
+    min-height: 420px;
   }
   >.content {
     @include vertical-align(relative);

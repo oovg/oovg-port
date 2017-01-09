@@ -1,15 +1,13 @@
-<section class="feature" [ngStyle]="{'background-color': '#' + work.color}">
+<section class="feature half" [ngStyle]="{'background-color': '#' + work.color}">
   <div class="content">
-    <p><a [routerLink]="['/works']" [routerLinkActive]="['active']">Works</a> / {{work.title}}</p>
-    <h1>{{work.caption}}</h1>
+    <p><a [routerLink]="['/works']" [routerLinkActive]="['active']">Works</a></p>
+    <h1>{{work.title}}</h1>
   </div>
 </section>
 
 <section *ngIf="work" class="work">
   
   <h1 class="title">{{work.title}}</h1>
-  <div class="tags">{{work.types | json}}
-  </div>
   <div class="tags">
     <div class="item" *ngFor="let type of work.types">{{type.name}}</div>
   </div>
