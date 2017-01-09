@@ -1,11 +1,14 @@
 import { Injectable } from '@angular/core';
 import { Work } from './work.model';
 import { Image } from './work.model';
+import { Type } from './work.model';
 
 const Works: Work[] = [
-      {id: 1, 
-        title: 'Civic', 
-        type: 'Branding', 
+      {id: 1,
+        title: 'Civic',
+        types: [] = [
+          { name: 'Branding' }
+        ],
         caption: 'Data for the people',
         color: '220f25',
         images: [] = [
@@ -21,7 +24,11 @@ const Works: Work[] = [
       },
       {id: 2, 
        title: 'LandApart', 
-       type: 'Branding', 
+       types: [] = [
+          { name: 'Branding' },
+          { name: 'Print' },
+          { name: 'Product' }
+        ], 
        caption: 'Under the stars',
        color: '649553',
        images: [] = [
@@ -37,7 +44,9 @@ const Works: Work[] = [
       },
       {id: 3, 
         title: 'Bloomsbury Anthology of Aesthetics', 
-        type: 'Print', 
+        types: [] = [
+          { name: 'Print' }
+        ], 
         caption: 'Harmony vs. Disharmony',
        color: '220f25',
         images: [] = [
@@ -53,7 +62,10 @@ const Works: Work[] = [
       },
       {id: 4, 
        title: 'Landfill Quarterly', 
-       type: 'Branding', 
+       types: [] = [
+          { name: 'Branding' },
+          { name: 'Print' }
+        ],
        caption: 'Subscribe to Ephemera',
        color: '220f25',
        images: [] = [
@@ -70,7 +82,9 @@ const Works: Work[] = [
       }, 
       {id: 5, 
        title: 'Hill or no Hill', 
-       type: 'Print',
+       types: [] = [
+          { name: 'Print' }
+        ],
        caption: 'San Francisco printed in 3D',
        color: '220f25',
        images: [] = [
@@ -86,7 +100,10 @@ const Works: Work[] = [
       },
       {id: 6, 
        title: 'Hippy Shit', 
-       type: 'Print',
+       types: [] = [
+          { name: 'Branding' },
+          { name: 'Print' }
+        ],
        caption: 'Make believe it is your first time',
        color: '220f25',
        images: [] = [
@@ -102,7 +119,10 @@ const Works: Work[] = [
       },
       {id: 7, 
        title: 'University of Hawaii', 
-       type: 'Branding',
+       types: [] = [
+          { name: 'Branding' },
+          { name: 'Print' }
+        ],
        caption: 'Western Philosophy, meet Eastern Philosophy',
        color: '220f25',
        images: [] = [
@@ -118,7 +138,10 @@ const Works: Work[] = [
       },
       {id: 8, 
        title: 'Iceland', 
-       type: 'Illustration',
+       types: [] = [
+          { name: 'Branding' },
+          { name: 'Print' }
+        ],
        caption: 'Broken Camera = Illustrations',
        color: '220f25',
        images: [] = [
@@ -134,7 +157,10 @@ const Works: Work[] = [
       },
       {id: 9, 
        title: 'Chromatic Guide to Gear Ratios', 
-       type: 'Print',
+       types: [] = [
+          { name: 'Branding' },
+          { name: 'Print' }
+        ],
        caption: 'Interactive Print',
        color: '220f25',
        images: [] = [

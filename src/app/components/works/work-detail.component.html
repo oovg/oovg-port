@@ -8,8 +8,10 @@
 <section *ngIf="work" class="work">
   
   <h1 class="title">{{work.title}}</h1>
+  <div class="tags">{{work.types | json}}
+  </div>
   <div class="tags">
-    <div class="item">{{work.type}}</div>
+    <div class="item" *ngFor="let type of work.types">{{type.name}}</div>
   </div>
   <p class="caption">{{work.caption}}</p>
   

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Work } from './work.model';
 import { WorksService } from './works.service';
 import { routerTransition } from '../../router.animations';
+import { Type } from './work.model';
 
 @Component({
   selector: 'works-list',
@@ -11,7 +12,8 @@ import { routerTransition } from '../../router.animations';
 })
 
 export class WorksComponent implements OnInit{
-  filter: any[] = ['Branding'];
+  types: Type[] = [];
+  filter: string[] = ['Branding'];
   works: Work[] = [];
 
   constructor(private worksService: WorksService){ }

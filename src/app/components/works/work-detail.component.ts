@@ -2,6 +2,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 
 import { Work } from './work.model';
+import { Type } from './work.model';
 import { WorksService } from './works.service';
 
 import { routerTransition } from '../../router.animations';
@@ -15,6 +16,7 @@ import { routerTransition } from '../../router.animations';
 export class WorkDetailComponent implements OnInit, OnDestroy {
     work: Work;
     sub: any;
+    types: Type[] = [];
 
     constructor(private worksService: WorksService,
                 private route: ActivatedRoute,

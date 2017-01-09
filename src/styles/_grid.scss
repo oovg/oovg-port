@@ -27,6 +27,9 @@ section.feature {
   background-color: $salmon;
   background-size: cover;
   background-position: center center;
+  &.half {
+    height: 50vh;
+  }
   >.content {
     @include vertical-align(relative);
     color: #FFF;

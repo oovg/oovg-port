@@ -1,7 +1,7 @@
 export interface Work {
   id: number;
   title: string;
-  type: string;
+  types: Type[];
   caption: string;
   color: string;
   images: Image[];
@@ -10,4 +10,8 @@ export interface Work {
 export interface Image {
   id: number;
   url: string;
+}
+
+export interface Type {
+  name: string;
 }
