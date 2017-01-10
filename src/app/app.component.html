@@ -1,5 +1,5 @@
 <section class="header" [ngClass]="{'hide': (direction==='down' && lastScrollTop>20 && !checked), 'bg':lastScrollTop>420}">
-  <div class="desktop-only">
+  <div class="desktop-only container">
     <a class="logo" [routerLink]="['/']" [routerLinkActive]="['active']"><img src="../assets/images/oovg-logo-primary.png"></a>
 
     <nav class="desktop" >
@@ -9,7 +9,7 @@
     </nav>
   </div>
   
-  <div class="mobile-only">
+  <div class="mobile-only container">
     <a class="logo" [routerLink]="['/']" [routerLinkActive]="['active']"><img src="../assets/images/oovg-logo-primary.png"></a>
     <p-toggleButton [(ngModel)]="checked" >Menu</p-toggleButton>
     <nav class="mobile" [ngClass]="{'menuOpen': checked}">

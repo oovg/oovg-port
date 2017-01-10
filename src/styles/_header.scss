@@ -23,8 +23,8 @@
 nav.desktop {
   position: absolute;
   width: auto;
-  top: 20px;
-  right: 50px;
+  top: 35px;
+  right: 0;
   a {
     font-size: 1.35em;
     width: auto;
@@ -35,11 +35,18 @@ nav.desktop {
   } 
 }
 
+.desktop-only.container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 .desktop-only .logo {
   position: absolute;
   z-index: 1;
-  top: 15px;
-  left: 50px;
+  top: 20px;
+  margin: 0 auto;
+  left: 0;
   border: none;
   >img {
     height: 80px;
@@ -51,10 +58,9 @@ nav.desktop {
 
 p-togglebutton {
   position: absolute;
-  top: 30px;
+  top: 25px;
   right: 50px;
   z-index: 1;
-  
 }
 
 .ui-helper-hidden-accessible {
@@ -62,12 +68,19 @@ p-togglebutton {
     appearance: none;
     cursor: pointer;
     font-family: 'sofia-pro', sans-serif;
-    font-size: 1em;
+    font-size: 1.5em;
     background-color: transparent;
     border: none;
+    
     &:focus { outline: none;}
     &:after {
       content: 'Menu';
+      color: $salmon;
+      transition: all .2s ease-in-out;
+    }
+    &:hover:after {
+      transition: all .2s ease-in-out;
+      color: $primary-color;
     }
   }
 }
@@ -83,22 +96,22 @@ p-togglebutton {
   left: 30px;
   border: none;
   >img {
-    height: 40px;
-    width: 40px;
+    height: 60px;
+    width: 60px;
   }
 }
 
+
 nav.mobile {
+  transition: all .3s ease-in-out;
   position: absolute;
   overflow: auto;
   top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
-  background-color: $background;
   opacity: 0;
   pointer-events: none;
-  transition: opacity .2s ease-in-out;
   .button-group {
     text-align: right;
   }
@@ -106,6 +119,7 @@ nav.mobile {
   &.menuOpen {
     pointer-events: all;
     opacity: 1;
+    background: rgba(255,255,255,1);
   }
   button {
     text-align: right;
@@ -116,7 +130,7 @@ nav.mobile {
     &.active, &:hover {
     }
     &:nth-child(1) {
-      margin-top: 100px;
+      margin-top: 120px;
     }
   } 
 }
