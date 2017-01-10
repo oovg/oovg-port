@@ -9,6 +9,7 @@ import { routerTransition } from './router.animations';
   host: {'[@routerTransition]': ''}
 })
 export class AppComponent {
+  
   lastScrollTop: number = 0;
   direction: string = "";
 

@@ -1,13 +1,29 @@
-<section class="header" [ngClass]="{'hide': (direction==='down' && lastScrollTop>10), 'bg':lastScrollTop>420}">
-  <a class="logo" [routerLink]="['/']" [routerLinkActive]="['active']"><img class="logo" src="../assets/images/oovg-logo-primary.png"></a>
-  <nav>
-    <a class="" [routerLink]="['/works']" [routerLinkActive]="['active']">Work</a>
-    <a class="" [routerLink]="['/about']" [routerLinkActive]="['active']">Office</a>
-    <a class="" [routerLink]="['/connect']" [routerLinkActive]="['active']">Connect</a>
-  </nav>
+<section class="header" [ngClass]="{'hide': (direction==='down' && lastScrollTop>20 && !checked), 'bg':lastScrollTop>420}">
+  <div class="desktop-only">
+    <a class="logo" [routerLink]="['/']" [routerLinkActive]="['active']"><img src="../assets/images/oovg-logo-primary.png"></a>
+
+    <nav class="desktop" >
+      <a class="" [routerLink]="['/works']" [routerLinkActive]="['active']">Work</a>
+      <a class="" [routerLink]="['/about']" [routerLinkActive]="['active']">Office</a>
+      <a class="" [routerLink]="['/connect']" [routerLinkActive]="['active']">Connect</a>
+    </nav>
+  </div>
+  
+  <div class="mobile-only">
+    <a class="logo" [routerLink]="['/']" [routerLinkActive]="['active']"><img src="../assets/images/oovg-logo-primary.png"></a>
+    <p-toggleButton [(ngModel)]="checked" >Menu</p-toggleButton>
+    <nav class="mobile" [ngClass]="{'menuOpen': checked}">
+      <div class="button-group">
+        <button class="" (click)="checked = !checked" [routerLink]="['/works']" [routerLinkActive]="['active']">Work</button>
+        <button class="" (click)="checked = !checked" [routerLink]="['/about']" [routerLinkActive]="['active']">Office</button>
+        <button class="" (click)="checked = !checked" [routerLink]="['/connect']" [routerLinkActive]="['active']">Connect</button>
+      </div>
+    </nav>
+  </div>
+  
 </section>
 
 
-<div class="page">
+<div class="page" [ngClass]="{'freeze': checked}">
   <router-outlet [@routerTransition]=""></router-outlet>
 </div>

@@ -19,6 +19,7 @@ html {
   height: 100%;
   margin: 0;
   padding: 0;  
+  position: relative;
 }
 
 body {
@@ -31,6 +32,7 @@ body {
   background-color: $background;
   text-align: left;
   font-size: 1em;
+  position: relative;
 }
 
 p { 
@@ -67,6 +69,23 @@ a.button {
   color: #fff;
   border: 2px solid #fff;
   padding: 10px 15px;
+}
+
+button {
+  font-family: 'sofia-pro', sans-serif;
+  font-size: 1em;
+  color: $salmon;
+  appearance: none;
+  border: transparent;
+  background-color: transparent;
+  transition: all .2s linear;
+  cursor:pointer;
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    color: $primary-color;
+  }
 }
 
 // Animations
