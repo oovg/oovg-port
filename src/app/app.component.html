@@ -11,7 +11,7 @@
   
   <div class="mobile-only container">
     <a class="logo" [routerLink]="['/']" [routerLinkActive]="['active']"><img src="../assets/images/oovg-logo-primary.png"></a>
-    <p-toggleButton [(ngModel)]="checked" >Menu</p-toggleButton>
+    <p-toggleButton [(ngModel)]="checked" [ngClass]="{'checked': checked}">Menu</p-toggleButton>
     <nav class="mobile" [ngClass]="{'menuOpen': checked}">
       <div class="button-group">
         <button class="" (click)="checked = !checked" [routerLink]="['/works']" [routerLinkActive]="['active']">Work</button>
