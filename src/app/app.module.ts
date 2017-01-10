@@ -5,6 +5,7 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 
 import { router } from './app.routes';
+import { ScrollStoreModule } from 'scrollStore';
 
 import { HomeComponent }   from './components/home/home.component';
 import { AboutComponent }   from './components/about/about.component';
@@ -30,7 +31,8 @@ import {CheckboxModule} from 'primeng/primeng';
     FormsModule,
     HttpModule,
     CheckboxModule,
-    router
+    router,
+    ScrollStoreModule
   ],
   providers: [WorksService],
   bootstrap: [AppComponent]

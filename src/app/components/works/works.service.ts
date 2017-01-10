@@ -10,6 +10,7 @@ const Works: Work[] = [
           { name: 'Branding' }
         ],
         caption: 'Data for the people',
+        desc: 'Unique challenge',
         color: '220f25',
         images: [] = [
           {
@@ -30,6 +31,7 @@ const Works: Work[] = [
           { name: 'Product' }
         ], 
        caption: 'Under the stars',
+       desc: 'Unique challenge',
        color: '649553',
        images: [] = [
           {
@@ -49,6 +51,7 @@ const Works: Work[] = [
           { name: 'Photo Illustration' }
         ], 
         caption: 'Harmony vs. Disharmony',
+        desc: 'Tasked with designing a book cover for a new anthology of aesthetics published by Bloomsbury. The unique challenge was illustrating the inherent harmony and disharmony framed by aesthetics. Front cover photo illustration for harmony, back cover illustration for disharmony using the same deconstructed set.',
         color: 'dc363a',
         images: [] = [
           {
@@ -68,6 +71,7 @@ const Works: Work[] = [
           { name: 'Print' }
         ],
        caption: 'Ephemera Subscription Service',
+       desc: 'Unique challenge',
        color: '220f25',
        images: [] = [
           {
@@ -87,6 +91,7 @@ const Works: Work[] = [
           { name: 'Print' }
         ],
        caption: 'San Francisco printed in 3D',
+       desc: 'Unique challenge',
        color: '220f25',
        images: [] = [
           {
@@ -106,6 +111,7 @@ const Works: Work[] = [
           { name: 'Print' }
         ],
        caption: 'Make believe it is your first time',
+       desc: 'Unique challenge',
        color: '220f25',
        images: [] = [
           {
@@ -125,6 +131,7 @@ const Works: Work[] = [
           { name: 'Print' }
         ],
        caption: 'Western Philosophy, meet Eastern Philosophy',
+       desc: 'Unique challenge',
        color: '220f25',
        images: [] = [
           {
@@ -144,6 +151,7 @@ const Works: Work[] = [
           { name: 'Print' }
         ],
        caption: 'Broken Camera = Illustrations',
+       desc: 'Unique challenge',
        color: '220f25',
        images: [] = [
           {
@@ -163,6 +171,7 @@ const Works: Work[] = [
           { name: 'Print' }
         ],
        caption: 'Interactive Print',
+       desc: 'Unique challenge',
        color: '220f25',
        images: [] = [
           {

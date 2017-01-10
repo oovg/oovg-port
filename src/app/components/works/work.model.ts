@@ -3,6 +3,7 @@ export interface Work {
   title: string;
   types: Type[];
   caption: string;
+  desc: string;
   color: string;
   images: Image[];
 }

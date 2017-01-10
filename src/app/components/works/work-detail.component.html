@@ -3,13 +3,17 @@
     <p><a [routerLink]="['/works']" [routerLinkActive]="['active']">Works</a></p>
     <h1>{{work.title}}</h1>
     <p>{{work.caption}}</p>
-    <div class="tags">
-      <div class="item" *ngFor="let type of work.types">{{type.name}}</div>
-    </div>
+    
   </div>
 </section>
 
 <section *ngIf="work" class="work-detail">
+  
+  <div class="tags">
+      <div class="item" *ngFor="let type of work.types">{{type.name}}</div>
+    </div>
+  
+  <p class="container text">{{work.desc}}</p>
   
   <div *ngFor="let image of work.images" class="work-img">
     <img src="{{image.url}}"/>
