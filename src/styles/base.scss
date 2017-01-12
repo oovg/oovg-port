@@ -8,6 +8,7 @@
 @import 'loader';
 @import 'grid';
 @import 'header';
+@import 'icons';
 @import 'typography';
 @import 'works';
 @import 'media';
@@ -42,7 +43,6 @@ p {
   font-family: 'sofia-pro', sans-serif;
   text-align: left;
   line-height: 1.35em;
-  margin: .5em 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -51,7 +51,6 @@ h1, h2, h3, h4, h5, h6 {
   color: $primary-color;
   text-align: left;
   line-height: 1.35em;
-  margin: .5em 0;
 }
 
 
@@ -76,6 +75,7 @@ a.button {
   color: #fff;
   border: 2px solid #fff;
   padding: 10px 15px;
+  margin: 20px 0;
 }
 
 button {

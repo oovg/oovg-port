@@ -30,6 +30,7 @@ nav.desktop {
     width: auto;
     display: inline-block;
     margin: 0 15px 0 0;
+    color: $primary-color;
     &.active, &:hover {
     }
   } 
@@ -74,18 +75,25 @@ p-togglebutton {
     font-family: 'sofia-pro', sans-serif;
     font-size: 1.5em;
     background-color: transparent;
-    border: none;
-    font: normal normal normal 24px/1 FontAwesome;
-    
-    &:focus { outline: none;}
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+    &:focus { outline: none; }
     &:after {
-      content: '\f0c9';
-      color: $salmon;
+      content: '';
+      display: inline-block;
+      background-color: $salmon;
+      width: 20px;
+      height: 20px;
+      border: none;
+      -webkit-mask-image: url('../assets/images/icons/icon_hamburger.svg');
+      mask-image: url('../assets/images/icons/icon_hamburger.svg');
       transition: all .2s ease-in-out;
     }
     &:hover:after {
+      content: '';
+      background-color: $primary-color;
       transition: all .2s ease-in-out;
-      color: $primary-color;
     }
   }
 }
@@ -93,7 +101,19 @@ p-togglebutton {
 .checked {
   .ui-helper-hidden-accessible > input[type='checkbox'] {
     &:after {
-      content: '\f00d' !important;
+      content: '';
+      background-color: $salmon;
+      width: 20px;
+      height: 20px;
+      border: none;
+      -webkit-mask-image: url('../assets/images/icons/icon_close.svg');
+      mask-image: url('../assets/images/icons/icon_close.svg');
+      transition: all .2s ease-in-out;
+    }
+    &:hover:after {
+      content: '';
+      background-color: $primary-color;
+      transition: all .2s ease-in-out;
     }
   }
 }

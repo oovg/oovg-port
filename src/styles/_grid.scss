@@ -47,7 +47,13 @@ section.feature {
     }
     a { 
       color: rgba(255,255,255,.85);
+      fill: rgba(255,255,255,.85);
       border-color: rgba(255,255,255,.85);
+      &:hover {
+        color: rgba(255,255,255,1);
+        fill: rgba(255,255,255,1);
+        border-color: rgba(255,255,255,1);
+      }
     }
   }
 }

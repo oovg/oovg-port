@@ -49,12 +49,18 @@
         .title { 
           text-align: center;
           color: #fff;
-          font-size: 2.5em;
+          font-size: 2em;
+          margin: 0px;
+          padding: 0 25px;
         }
         .caption {
-          text-align: center;
-          margin-top: -25px; 
+          text-align: center; 
           color: #fff;
+          margin: .75em auto 2em auto;
+          padding: 0 25px;
+        }
+        a.button {
+          margin: 0px;
         }
       }
     }

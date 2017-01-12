@@ -1,0 +1,24 @@
+// Icons
+
+.rotate180 {
+  transform: rotate(180deg);
+}
+
+.icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(255,255,255,1);
+  &.arrow {
+    -webkit-mask-image: url('../assets/images/icons/icon_arrow.svg');
+    mask-image: url('../assets/images/icons/icon_arrow.svg');
+  }
+  &.hamburger {
+    -webkit-mask-image: url('../assets/images/icons/icon_hamburger.svg');
+    mask-image: url('../assets/images/icons/icon_hamburger.svg');
+  }
+  &.close {
+    -webkit-mask-image: url('../assets/images/icons/icon_close.svg');
+    mask-image: url('../assets/images/icons/icon_close.svg');
+  }
+}

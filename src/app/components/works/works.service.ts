@@ -83,7 +83,6 @@ const Works: Work[] = [
             url: '../assets/images/work/landfill/landfill-02.jpg'
           }
         ]
-        
       }, 
       {id: 5, 
        title: 'Hill or no Hill', 
