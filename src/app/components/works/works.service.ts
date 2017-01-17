@@ -159,7 +159,8 @@ const Works: Work[] = [
        title: 'Chromatic Guide to Gear Ratios', 
        types: [] = [
           { name: 'Branding' },
-          { name: 'Print' }
+          { name: 'Print' },
+          { name: 'Product' }
         ],
        caption: 'Interactive Print',
        color: '220f25',
