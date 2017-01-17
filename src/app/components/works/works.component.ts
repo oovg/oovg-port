@@ -17,6 +17,15 @@ export class WorksComponent implements OnInit{
   works: Work[] = [];
 
   constructor(private worksService: WorksService){ }
+  
+  test(types1, filter){
+    for(let i = 0; i <= filter.length-1; i++){
+      for(let j = 0; j <= types1.length-1; j++){
+        if(types1[j].name == filter[i]) return true;
+      }
+    }
+    return false;
+  }
 
   ngOnInit(){
     this.works = this.worksService.getAll();

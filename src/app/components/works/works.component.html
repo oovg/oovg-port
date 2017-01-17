@@ -4,12 +4,20 @@
   </div>
 </section>
 
+
+<div class="tags">
+  <p-checkbox class="item" name="groupname" value="Branding" label="Branding" [(ngModel)]="filter"></p-checkbox>
+  <p-checkbox class="item" name="groupname" value="Print" label="Print" [(ngModel)]="filter"></p-checkbox>
+  <p-checkbox class="item" name="groupname" value="Product" label="Product" [(ngModel)]="filter"></p-checkbox>
+</div>
+
 <!-- List the Works -->
 
 <div class="works">
   
   <div *ngFor="let work of works" class="work">
-    <div class="works-item" [ngStyle]="{'background-image': 'url(' + work.images[0].url + ')'}">
+
+    <div class="works-item" *ngIf="test(work.types, filter)" [ngStyle]="{'background-image': 'url(' + work.images[0].url + ')'}">
       <a href="#" [routerLink]="['/works', work.id]">
         <div class="overlay"
              [ngStyle]="{'background-color': '#' + work.color}">
