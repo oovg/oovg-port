@@ -124,4 +124,21 @@ button {
   }
 }
 
+// Inputs
+
+input[type='checkbox'] {
+  appearance: none;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  &:focus { outline: none; }
+}
+
+p-checkbox {
+  .ui-chkbox-box {
+    display: none;
+  }
+}
+
 
