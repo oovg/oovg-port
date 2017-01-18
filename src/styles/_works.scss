@@ -125,9 +125,10 @@
     transition: all .1s linear;
     cursor: pointer;
     color: $subdued;
-    &.checked { color: $primary-color;}
-    &.checked:hover { color: $subdued; }
-    &:not(.checked):hover { color: $primary-color; }
+    &.checked { color: $primary-color; }
+    &.checked:focus, &.checked:active { color: $primary-color;}
+    &:not(.checked):focus, &:not(.checked):active { color: $subdued; }
+    &:hover { color: $salmon; }
     &:not(last-child) {
       margin-right: 1px;
     }
