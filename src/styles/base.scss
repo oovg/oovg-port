@@ -136,9 +136,15 @@ input[type='checkbox'] {
 }
 
 p-checkbox {
-  .ui-chkbox-box {
+  .ui-helper-hidden-accessible {
     display: none;
   }
+}
+
+// Utilities
+
+.center-text {
+  text-align: center;
 }
 
 

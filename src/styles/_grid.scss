@@ -33,6 +33,10 @@ section.feature {
     height: 75vh;
     min-height: 420px;
   }
+  &.sliver {
+    height: 320px;
+    min-height: 200px;
+  }
   >.content {
     @include vertical-align(relative);
     color: #FFF;
