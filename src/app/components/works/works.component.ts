@@ -13,13 +13,13 @@ import { Type } from './work.model';
         state('void', style ({
           'transform':'scale(0)'
         })),
-      state('go', style ({
+      state('enter', style ({
           'opacity':'1'
         })),
-      state('stop', style ({
+      state('leave', style ({
           'opacity':'0'
         })),
-      transition('* => *', animate(300))
+      transition('* <=> *', animate('300ms linear'))
       ]
     )
   ],
