@@ -11,15 +11,16 @@ import { Type } from './work.model';
     routerTransition(),
     trigger('ifWorkAnimate', [
         state('void', style ({
-          'transform':'scale(0)'
+          'opacity': '0',
+          'transform': 'scale(0)'
         })),
       state('enter', style ({
-          'opacity':'1'
+          'opacity': '1'
         })),
       state('leave', style ({
-          'opacity':'0'
+          'opacity': '0'
         })),
-      transition('* <=> *', animate('300ms linear'))
+      transition('* <=> *', animate('400ms linear'))
       ]
     )
   ],
