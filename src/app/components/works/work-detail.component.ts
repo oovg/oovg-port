@@ -10,7 +10,9 @@ import { routerTransition } from '../../router.animations';
 
 @Component({
   templateUrl: './work-detail.component.html',
-  animations: [routerTransition()],
+  animations: [
+    routerTransition()
+  ],
   host: {'[@routerTransition]': ''}
 })
 export class WorkDetailComponent implements OnInit, OnDestroy {
