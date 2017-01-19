@@ -7,7 +7,8 @@ const Works: Work[] = [
       {id: 1,
         title: 'Civic',
         types: [] = [
-          { name: 'Branding' }
+          { name: 'Branding' },
+          { name: 'Product' }
         ],
         caption: 'Data for the people',
         desc: 'Unique challenge',
@@ -106,7 +107,6 @@ const Works: Work[] = [
       {id: 6, 
        title: 'Hippy Shit', 
        types: [] = [
-          { name: 'Branding' },
           { name: 'Print' }
         ],
        caption: 'Make believe it is your first time',
@@ -127,7 +127,7 @@ const Works: Work[] = [
        title: 'University of Hawaii', 
        types: [] = [
           { name: 'Branding' },
-          { name: 'Print' }
+          { name: 'Product' }
         ],
        caption: 'Western Philosophy, meet Eastern Philosophy',
        desc: 'Unique challenge',
@@ -146,8 +146,7 @@ const Works: Work[] = [
       {id: 8, 
        title: 'Iceland', 
        types: [] = [
-          { name: 'Branding' },
-          { name: 'Print' }
+          { name: 'Illustration' }
         ],
        caption: 'Broken Camera = Illustrations',
        desc: 'Unique challenge',
@@ -166,9 +165,7 @@ const Works: Work[] = [
       {id: 9, 
        title: 'Chromatic Guide to Gear Ratios', 
        types: [] = [
-          { name: 'Branding' },
-          { name: 'Print' },
-          { name: 'Product' }
+          { name: 'Print' }
         ],
        caption: 'Interactive Print',
        desc: 'Unique challenge',

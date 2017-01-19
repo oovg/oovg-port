@@ -10,6 +10,7 @@
   display: inline-block;
   text-align: center;
   .works-item { 
+    z-index: 0;
     border-radius: 50%;
     width: 420px;
     height: 420px;
@@ -143,15 +144,14 @@
       border: 2px solid;
       cursor: pointer;
       width: auto;
-      padding: 10px 15px 10px 40px;
+      padding: 10px 15px 10px 30px;
       &:after {
         @include vertical-align();
-        left: 15px;
-        margin-right: 15px;
+        left: 10px;
         display: inline-block;
         background-color: none;
-        width: 15px;
-        height: 15px;
+        width: 10px;
+        height: 10px;
         float: left;
         content: '';
         border: 2px solid;
@@ -167,12 +167,11 @@
     .ui-chkbox-label {
       &:after {
         @include vertical-align();
-        left: 15px;
-        margin-right: 15px;
+        left: 10px;
         display: inline-block;
         background-color: $primary-color;
-        width: 15px;
-        height: 15px;
+        width: 10px;
+        height: 10px;
         float: left;
         content: '';
         border: 2px solid;

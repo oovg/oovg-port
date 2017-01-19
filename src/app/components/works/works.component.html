@@ -1,10 +1,11 @@
-<section class="feature half" [ngStyle]="{'background-color': 'rgba(155,177,190,1)'}">
+<section class="feature sliver" [ngStyle]="{'background-color': 'rgba(155,177,190,1)'}">
   <div class="content">
     <h1 class="center-text">Filter</h1>
     <div class="filter">
       <p-checkbox class="item" [ngClass]="{'checked':filter.indexOf('Branding') !== -1}" name="filter" value="Branding" label="Branding" [(ngModel)]="filter"></p-checkbox>
       <p-checkbox class="item" [ngClass]="{'checked':filter.indexOf('Print') !== -1}" name="filter" value="Print" label="Print" [(ngModel)]="filter"></p-checkbox>
       <p-checkbox class="item" name="filter" value="Product" label="Product" [(ngModel)]="filter" [ngClass]="{'checked':filter.indexOf('Product') !== -1}"></p-checkbox>
+      <p-checkbox class="item" name="filter" value="Illustration" label="Illustration" [(ngModel)]="filter" [ngClass]="{'checked':filter.indexOf('Illustration') !== -1}"></p-checkbox>
     </div>
   </div>
   

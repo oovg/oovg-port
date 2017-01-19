@@ -18,7 +18,7 @@ const routes: Routes = [
   },
   {
     path: 'works/:id',
-    component: WorkDetailComponent
+    component: WorkDetailComponent,
   },
   {
     path: 'about',
@@ -30,7 +30,7 @@ const routes: Routes = [
   },
   {
     path: '**',
-    component: NotFoundComponent
+    component: NotFoundComponent,
   },
 ];
 
