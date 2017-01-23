@@ -4,6 +4,7 @@
   margin: 20px 0 0 0;
   width: 100%;
   position: relative;
+  text-align: center;
 }
 .work {
   position: relative;
@@ -12,8 +13,8 @@
   .works-item { 
     z-index: 0;
     border-radius: 50%;
-    width: 420px;
-    height: 420px;
+    width: 300px;
+    height: 300px;
     margin: 25px;
     background-size: cover;
     background-position: center center;
@@ -62,6 +63,9 @@
         }
         a.button {
           margin: 0px;
+          color: #fff;
+          border: 2px solid #fff;
+          padding: 10px 15px;
         }
       }
     }
@@ -106,17 +110,76 @@
       border-color: $warm-grey;
       color: $warm-grey; 
     }
-    &:hover {
-      border-color: $subdued; 
-      color: $subdued;
+  }
+}
+
+// Filter New
+
+.filter {
+  font-size: 1.5em;
+  font-weight: 300;
+  text-align: left;
+  
+  p {
+    font-size: 1em;
+    
+  }
+  .icon.arrow {
+    margin-left: 5px;
+  }
+  .item {
+    display: inline-block;
+    position: relative;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #fff;
+    width: auto;
+    .ui-chkbox-label {
+      width: auto;
       cursor: pointer;
+      transition: all .1s ease-in-out;
+    }
+    .ui-chkbox-label:after {
+      content: '';
+      width: 0;
+      left:0;
+      margin-top: 3px;
+      text-align: center;
+      height: 6px;
+      @include vertical-align();
+      background-color: #fff;
+      transition: all .1s ease-in-out;
+    }
+    .ui-chkbox-label:hover:after {
+      width: 0%;
+      background-color: $salmon;
+    }
+    .ui-chkbox-label:hover {
+      color: $salmon;
+    }
+    &:not(.checked) {
+      .ui-chkbox-label:after {
+        content: '';
+        width: 100%;
+        height: 6px;
+        left: 0;
+        text-align: center;
+        @include vertical-align();
+        background-color: #fff;
+      } 
+      .ui-chkbox-label:hover:after {
+        width: 100%;
+        background-color: $salmon;
+      }
     }
   }
 }
 
+
+
 // Filter
 
-.filter {
+.filter.tags {
   margin: 30px auto;
   width: 100%;
   .item {
@@ -161,7 +224,7 @@
   }
 }
 
-.filter .item {
+.filter.tags .item {
   &.checked {
     transition: all .2s linear;
     .ui-chkbox-label {

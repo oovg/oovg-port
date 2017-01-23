@@ -8,7 +8,7 @@ const Works: Work[] = [
         title: 'Civic',
         types: [] = [
           { name: 'Branding' },
-          { name: 'Product' }
+          { name:'Web' }
         ],
         caption: 'Data for the people',
         desc: 'Unique challenge',
@@ -29,7 +29,7 @@ const Works: Work[] = [
        types: [] = [
           { name: 'Branding' },
           { name: 'Print' },
-          { name: 'Product' }
+          { name: 'Web' }
         ], 
        caption: 'Under the stars',
        desc: 'Unique challenge',
@@ -49,7 +49,7 @@ const Works: Work[] = [
         title: 'Bloomsbury Anthology of Aesthetics', 
         types: [] = [
           { name: 'Print' },
-          { name: 'Photo Illustration' }
+          { name: 'Illustration' }
         ], 
         caption: 'Harmony vs. Disharmony',
         desc: 'Tasked with designing a book cover for a new anthology of aesthetics published by Bloomsbury. The unique challenge was illustrating the inherent harmony and disharmony framed by aesthetics. Front cover photo illustration for harmony, back cover illustration for disharmony using the same deconstructed set.',
@@ -69,7 +69,8 @@ const Works: Work[] = [
        title: 'Landfill Quarterly', 
        types: [] = [
           { name: 'Branding' },
-          { name: 'Print' }
+          { name: 'Print' },
+          { name: 'Web' }
         ],
        caption: 'Ephemera Subscription Service',
        desc: 'Unique challenge',
@@ -107,7 +108,8 @@ const Works: Work[] = [
       {id: 6, 
        title: 'Hippy Shit', 
        types: [] = [
-          { name: 'Print' }
+          { name: 'Print' },
+          { name: 'Illustration' }
         ],
        caption: 'Make believe it is your first time',
        desc: 'Unique challenge',
@@ -127,7 +129,7 @@ const Works: Work[] = [
        title: 'University of Hawaii', 
        types: [] = [
           { name: 'Branding' },
-          { name: 'Product' }
+          { name: 'Web' }
         ],
        caption: 'Western Philosophy, meet Eastern Philosophy',
        desc: 'Unique challenge',

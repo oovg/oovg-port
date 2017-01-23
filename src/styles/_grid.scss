@@ -2,8 +2,9 @@
 
 .page {
   width: 100%;
-  text-align: center;
   transition: opacity .2s ease-in-out;
+  padding-bottom: 60px;
+  text-align: center;
   &.freeze {
     opacity: 0;
     overflow: hidden;
@@ -60,4 +61,13 @@ section.feature {
       }
     }
   }
+}
+
+.avatar {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background-size: cover;
+  float: left;
+  margin: 0px 25px 25px 0px;
 }

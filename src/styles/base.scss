@@ -71,14 +71,7 @@ a {
 
 // Buttons
 
-a.button {
-  color: #fff;
-  border: 2px solid #fff;
-  padding: 10px 15px;
-  margin: 20px 0;
-}
-
-button {
+button, a.button {
   font-family: 'sofia-pro', sans-serif;
   font-size: 1em;
   color: $salmon;

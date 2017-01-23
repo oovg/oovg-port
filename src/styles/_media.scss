@@ -17,15 +17,16 @@
 // Below Grid
 
 @media all and (max-width: 1100px) {
-
+  
   .work {
-    display: block;
+    display: inline-block;
     .works-item {
       width: 280px;
       height: 280px;
-      margin: 20px auto;
     }
   }
+
+  
   
   h1, h2, h3 {
     font-size: 1.5em;
@@ -40,5 +41,46 @@
   .desktop-only {
     display: none;
   }
+  
+  
 
+}
+
+// Mobile only
+
+@media all and (max-width: 480px) {
+  
+  .work {
+    display: block;
+    .works-item {
+      width: 280px;
+      height: 280px;
+      margin: 20px auto;
+    }
+  }
+  
+  // Mobile Filter
+  
+  .filter {
+    position: relative;
+    margin-top: 40px;
+    text-align: center;
+    .item {
+      position: relative;
+      font-size: 1em;
+      text-align: center;
+      .ui-chkbox-label:after {
+        height: 4px;
+      }
+      &:not(.checked) .ui-chkbox-label:after {
+        height: 4px;
+      }
+    }
+    .icon.arrow {
+      display: block;
+      margin: 10px auto;
+      transform: rotate(90deg);
+    }
+  }
+  
 }
