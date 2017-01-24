@@ -1,6 +1,6 @@
-<section class="feature half" [ngStyle]="{'background-color': 'rgba(155,177,190,1)'}">
+<section class="feature half" [ngStyle]="{'background-color': 'rgba(238,73,92,1)'}">
   <div class="content filter">
-    <h2>The Office produces considered design along the full spectrum.</h2>
+    <h1>The Office produces considered design along the full spectrum.</h1>
     <p-checkbox class="item" [ngClass]="{'checked':filter.indexOf('Branding') !== -1}" name="filter" value="Branding" label="Branding" [(ngModel)]="filter"></p-checkbox>
     <div class="icon arrow"></div>
     <p-checkbox class="item" name="filter" value="Web" label="Web" [(ngModel)]="filter" [ngClass]="{'checked':filter.indexOf('Web') !== -1}"></p-checkbox>
@@ -26,19 +26,33 @@
 <div class="works">
   
   <div *ngFor="let work of works" class="work">
-
-    <div class="works-item" *ngIf="test(work.types, filter)" [@ifWorkAnimate]="test(work.types, filter)" [ngStyle]="{'background-image': 'url(' + work.images[0].url + ')'}">
-      <a href="#" [routerLink]="['/works', work.id]">
-        <div class="overlay"
+    <a href="#" [routerLink]="['/works', work.id]">
+    <div class="works-item" *ngIf="test(work.types, filter)" [@ifWorkAnimate]="test(work.types, filter)">
+      <div class="content">
+        <div class="work-img" [ngStyle]="{'background-image': 'url(' + work.images[0].url + ')'}">
+          <div class="overlay" [ngStyle]="{'background-color': '#' + work.color}"></div>
+        </div>
+        <div class="meta">
+          <h6 class="number">No. {{work.id}}</h6>
+          <div class="rule"></div>
+          <h5 class="title">{{work.title}}</h5>
+        </div>
+      </div>
+      
+        <!--<div class="overlay"
              [ngStyle]="{'background-color': '#' + work.color}">
           <div class="container">
-            <h3 class="title">{{work.title}}</h3>
+            
             <h6 class="caption">{{work.caption}}</h6>
             <a href="" [routerLink]="['/works', work.id]" class="button">View Context</a>
           </div>
-        </div>
-      </a>
+        </div>-->
+      
+      
+    
     </div>
+    
+    </a>
   </div>
   
 </div>

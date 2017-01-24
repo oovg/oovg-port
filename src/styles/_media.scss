@@ -22,7 +22,6 @@
     display: inline-block;
     .works-item {
       width: 280px;
-      height: 280px;
     }
   }
 
@@ -53,6 +52,10 @@
   .work {
     display: block;
     .works-item {
+      width: 280px;
+      margin: 25px auto 100px auto;
+    }
+    .work-img {
       width: 280px;
       height: 280px;
       margin: 20px auto;
