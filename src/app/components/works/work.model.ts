@@ -11,6 +11,7 @@ export interface Work {
 export interface Image {
   id: number;
   url: string;
+  caption: string;
 }
 
 export interface Type {

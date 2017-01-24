@@ -31,7 +31,7 @@ import { Type } from './work.model';
 
 export class WorksComponent implements OnInit{
   types: Type[] = [];
-  filter: string[] = ['Branding', 'Print', 'Web'];
+  filter: string[] = ['Branding', 'Print', 'Web', 'Illustration'];
   works: Work[] = [];
 
   constructor(private worksService: WorksService){ }

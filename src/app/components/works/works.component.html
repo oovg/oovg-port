@@ -1,6 +1,6 @@
 <section class="feature half" [ngStyle]="{'background-color': 'rgba(155,177,190,1)'}">
   <div class="content filter">
-    <p>The Office produces considered design along the full spectrum. Deselect a work type to turn off those projects.</p>
+    <h2>The Office produces considered design along the full spectrum.</h2>
     <p-checkbox class="item" [ngClass]="{'checked':filter.indexOf('Branding') !== -1}" name="filter" value="Branding" label="Branding" [(ngModel)]="filter"></p-checkbox>
     <div class="icon arrow"></div>
     <p-checkbox class="item" name="filter" value="Web" label="Web" [(ngModel)]="filter" [ngClass]="{'checked':filter.indexOf('Web') !== -1}"></p-checkbox>
