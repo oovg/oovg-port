@@ -9,14 +9,14 @@
 
 <section *ngIf="work" class="work-detail">
   
-  <div class="tags">
+  <div class="tags container text">
       <div class="item" *ngFor="let type of work.types">{{type.name}}</div>
     </div>
   
-  <p class="container text">{{work.desc}}</p>
+  <p class="container text" [innerHTML]="work.desc"></p>
   
   <div *ngFor="let image of work.images" class="work-img">
-    <p class="container text" *ngIf="image.caption">{{image.caption}}</p>
+    <p class="container text" *ngIf="image.caption" [innerHTML]="image.caption"></p>
     <img src="{{image.url}}"/>
   </div>
     

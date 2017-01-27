@@ -1,5 +1,6 @@
-import { Component, NgZone } from '@angular/core';
+import { Component, NgZone, OnInit } from '@angular/core';
 import { routerTransition } from './router.animations';
+import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -10,25 +11,33 @@ import { routerTransition } from './router.animations';
   ],
   host: {'[@routerTransition]': ''}
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   
   lastScrollTop: number = 0;
   direction: string = "";
 
-  constructor(lc: NgZone) {
-     window.onscroll = () => {
-        let st = window.pageYOffset;
-        let dir = '';
-        if (st > this.lastScrollTop) {
-            dir = "down";
-        } else {
-            dir = "up";
-        }
-        this.lastScrollTop = st;
-        lc.run(() => {
-          this.direction = dir;
-        });
-      };
+  constructor(lc: NgZone, private router: Router) {
+    window.onscroll = () => {
+      let st = window.pageYOffset;
+      let dir = '';
+      if (st > this.lastScrollTop) {
+          dir = "down";
+      } else {
+          dir = "up";
+      }
+      this.lastScrollTop = st;
+      lc.run(() => {
+        this.direction = dir;
+      });
+    };
   }
+  ngOnInit() {
+        this.router.events.subscribe((evt) => {
+            if (!(evt instanceof NavigationEnd)) {
+                return;
+            }
+            document.body.scrollTop = 0;
+        });
+    }
 }
 

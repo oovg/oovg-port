@@ -11,25 +11,20 @@
   display: inline-block;
   text-align: center;
   vertical-align: top;
-  a * { cursor: pointer; transition: color .2s ease-in-out;}
-  a:hover * {
-    
-      color: $salmon !important;
-      .work-img {
-        background-color: $salmon;
-        background-image: none;
-      }
-    }
+  a * { cursor: pointer; transition: color .2s ease-in-out; }
+  a:hover .title, a:hover .number {
+    color: $salmon;
+  }
+  a:hover .rule {
+    background-color: $salmon;
+  }
   .works-item { 
     z-index: 0;
     width: 300px;
     margin: 25px 25px 100px 25px;
     vertical-align: top;
     position: relative;
-    
-    
     .content {
-      
       .work-img {
         position: relative;
         transition: all .2s ease-in-out; 
@@ -58,10 +53,8 @@
         }
       } 
     }
-    
-    
     .overlay {
-      opacity: 1;
+      opacity: 0;
       position: absolute;
       border-radius: 0;
       top: 0;
@@ -70,24 +63,19 @@
       height: 100%;
       transition: all .3s ease-in-out;
       &:hover {
-        opacity: 0;
+        opacity: .9;
         width: 100%;
         height: 100%;
       }
-      .container {
+      .content {
+        opacity: 1 !important;
         @include vertical-align();
         width: 100%;
-        .title { 
-          text-align: center;
-          color: #fff;
-          font-size: 2em;
-          margin: 0px;
-          padding: 0 25px;
-        }
         .caption {
           text-align: center; 
           color: #fff;
-          margin: .75em auto 2em auto;
+          line-height: 1.15em;
+          margin: 0 auto 30px auto;
           padding: 0 25px;
         }
         a.button {
@@ -95,6 +83,11 @@
           color: #fff;
           border: 2px solid #fff;
           padding: 10px 15px;
+        }
+        .icon.arrow {
+          width: 14px;
+          height: 14px;
+          margin-left: 4px;
         }
       }
     }
@@ -164,6 +157,9 @@
     color: $primary-color;
     width: auto;
     padding: 0 5px;
+    .ui-chkbox-icon {
+      display: none;
+    }
     .ui-chkbox-label {
       width: auto;
       cursor: pointer;

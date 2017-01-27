@@ -41,6 +41,14 @@
     display: none;
   }
   
+  .grid {
+    .column {
+      display: block;
+      width: 100% !important;
+      margin: 0 0 100px 0;
+    }
+  }
+  
   
 
 }
@@ -60,6 +68,12 @@
       height: 280px;
       margin: 20px auto;
     }
+  }
+  
+  .avatar {
+    float: none;
+    display: block;
+    margin: 0 auto;
   }
   
   // Mobile Filter
