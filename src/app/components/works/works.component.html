@@ -1,7 +1,7 @@
 <section class="feature half" [ngStyle]="{'background-image': 'url(../assets/images/rustic-wood.jpg)'}">
   <div class="overlay teal"></div>
   <div class="content filter">
-    <h1>The Office produces considered design along the full spectrum.</h1>
+    <h1>The Office produces work along the full spectrum of design & technology.</h1>
     <p-checkbox class="item" [ngClass]="{'checked':filter.indexOf('Branding') !== -1}" name="filter" value="Branding" label="Branding" [(ngModel)]="filter"></p-checkbox>
     <div class="icon arrow"></div>
     <p-checkbox class="item" name="filter" value="Web" label="Web" [(ngModel)]="filter" [ngClass]="{'checked':filter.indexOf('Web') !== -1}"></p-checkbox>
@@ -9,6 +9,7 @@
     <p-checkbox class="item" [ngClass]="{'checked':filter.indexOf('Print') !== -1}" name="filter" value="Print" label="Print" [(ngModel)]="filter"></p-checkbox>
     <div class="icon arrow"></div>
     <p-checkbox class="item" name="filter" value="Illustration" label="Illustration" [(ngModel)]="filter" [ngClass]="{'checked':filter.indexOf('Illustration') !== -1}"></p-checkbox> 
+    <p><span class="fa fa-info-circle"></span> Click work type to remove it from view.</p> 
     <!--<div class="filter">
       <p-checkbox class="item" [ngClass]="{'checked':filter.indexOf('Branding') !== -1}" name="filter" value="Branding" label="Branding" [(ngModel)]="filter"></p-checkbox>
       <p-checkbox class="item" [ngClass]="{'checked':filter.indexOf('Print') !== -1}" name="filter" value="Print" label="Print" [(ngModel)]="filter"></p-checkbox>
