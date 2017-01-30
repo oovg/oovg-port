@@ -105,32 +105,12 @@
     font-size: 1.25em;
     font-weight: 500;
     line-height: 30px;
+    color: $subdued;
     padding: 5px 10px;
     border: 2px solid; 
     transition: all .1s linear;
     &:not(last-child) {
       margin-right: 10px;
-    }
-    
-    &.salmon {
-      border-color: $salmon;
-      color: $salmon;
-    }
-    &.teal {
-      border-color: $teal;
-      color: $teal;
-    }
-    &.evergreen {
-      border-color: $evergreen;
-      color: $evergreen; 
-    }
-    &.sky {
-      border-color: $sky;
-      color: $sky; 
-    }
-    &.warm-grey {
-      border-color: $warm-grey;
-      color: $warm-grey; 
     }
   }
 }

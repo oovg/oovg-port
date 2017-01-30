@@ -1,6 +1,6 @@
 <section class="feature half" [ngStyle]="{'background-color': '#' + work.color}">
   <div class="content">
-    <p><a [routerLink]="['/works']" [routerLinkActive]="['active']"><div class="icon arrow rotate180"></div> Works</a></p>
+    <p><a [routerLink]="['/works']" [routerLinkActive]="['active']"><div class="icon arrow rotate180"></div> Work</a></p>
     <h1>{{work.title}}</h1>
     <p>{{work.caption}}</p>
     
@@ -20,6 +20,12 @@
     <img src="{{image.url}}"/>
   </div>
     
+</section>
+
+<section class="feature sliver" [ngStyle]="{'background-color': 'rgba(110,127,211,1)'}">
+  <div class="content">
+    <p><a [routerLink]="['/works']" [routerLinkActive]="['active']"><div class="icon arrow rotate180"></div> Back to Work</a></p>
+  </div>
 </section>
 
 <!--<button (click)="gotoWorksList()">Back to works list</button>-->

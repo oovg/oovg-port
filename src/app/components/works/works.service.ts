@@ -439,7 +439,7 @@ const Works: Work[] = [
           { name: 'Web' }
         ],
        caption: '',
-       desc: 'Development and asset integration. Logo and web design by <a href="http://alexharris.co" target="_blank">Alex Harris</a>. Built in Wordpress. Menu is fed through Dropbox so that client can make regular updates.',
+       desc: 'Development and asset integration. Design by <a href="http://alexharris.co" target="_blank">Alex Harris</a>. Built in Wordpress.',
        color: 'fedd00',
        images: [] = [
           {
