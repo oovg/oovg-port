@@ -2,12 +2,12 @@
 
 // Import component decorator
 import { Component } from '@angular/core';
+import { routerTransition } from '../../router.animations';
 
 @Component({
-  template: `
-    <div class="container text"><h1>404</h1>
-    <p>"Not all who wander are lost"</p>
-    <a href="#" [routerLink]="['/']">Go Home</a></div>`
+  templateUrl: './not-found.component.html',
+  animations: [routerTransition()],
+  host: {'[@routerTransition]': ''}
 })
 
 // Component class
