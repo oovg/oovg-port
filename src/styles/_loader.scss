@@ -11,8 +11,10 @@
   margin: 0;
   padding: 0;
   .content {
-    width: 100%;
-    @include vertical-align();
+    max-width: 800px;
+    @include vertical-align(relative);
+    padding: 15px;
+    margin: 0 auto;
     h1 {
       text-align: center;
       color: #FFF;
