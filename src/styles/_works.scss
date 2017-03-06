@@ -262,20 +262,19 @@
   margin: 0 auto;
   width: 100%;
   .work-img {
-    display: block;
+    display: flex;
     max-width: 960px;
     margin: 0 auto;
     padding: 0px;
-    p {
-    font-size: 1.25em;
-    margin: 25px auto !important;
-    color: #aaa;
-    }
+    clear: both;
   }
   p {
     font-size: 1.25em;
-    margin: 50px auto;
+    margin: 0 auto;
     color: #aaa;
+  }
+  .caption {
+    margin-top: 50px;
   }
 }
 

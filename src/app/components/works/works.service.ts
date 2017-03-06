@@ -136,6 +136,11 @@ const Works: Work[] = [
             id: 2,
             url: '../assets/images/work/aesthetics/aesthetics-02.jpg',
             caption: ''
+          },
+          {
+            id: 3,
+            url: '../assets/images/work/aesthetics/aesthetics-cover-front.jpg',
+            caption: ''
           }
         ]
       },
