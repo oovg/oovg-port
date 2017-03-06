@@ -75,7 +75,7 @@
   &.sliver {
     height: 320px;
     min-height: 200px;
-    >.content { padding: 0px; }
+    >.content { padding-top: 0px; padding-bottom: 0px;}
   }
   &.pattern {
     background-color: none !important;
