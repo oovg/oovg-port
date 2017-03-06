@@ -40,17 +40,13 @@
   <!-- FontAwesome -->
   <script src="https://use.fontawesome.com/031ebbe0c7.js"></script>
   
-  <!-- Loader CSS -->
-  <link rel="stylesheet" type="text/css" href="../../assets/style.css">
-  
 </head>
 <body>
   <app-root>
-    <ng2-slim-loading-bar></ng2-slim-loading-bar>
-    <div class="loader">
+    <div class="loader" [ngStyle]="{'background-image': 'url(../assets/images/mount-hood-aerial.jpg)'}">
       <div class="content">
+        <img class="center-text" width="200px" height="200px" src="../assets/images/winking-tree.gif"/>
         <h1>Please consider the environment before printing this website.</h1>
-        <img class="center-text" width="150px" height="150px" src="../assets/images/winking-tree.gif"/>
       </div>
     </div>
   </app-root>
