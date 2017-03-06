@@ -14,6 +14,7 @@ import { NotFoundComponent }   from './components/not-found/not-found.component'
 import { WorksComponent }   from './components/works/works.component';
 import { WorkDetailComponent }   from './components/works/work-detail.component';
 import { WorksService }   from './components/works/works.service';
+import { SlimLoadingBarModule } from 'ng2-slim-loading-bar';
 import { CheckboxModule } from 'primeng/primeng';
 import { ToggleButtonModule } from 'primeng/primeng';
 
@@ -33,7 +34,8 @@ import { ToggleButtonModule } from 'primeng/primeng';
     HttpModule,
     CheckboxModule,
     ToggleButtonModule,
-    router
+    router,
+    SlimLoadingBarModule.forRoot()
   ],
   providers: [WorksService],
   bootstrap: [AppComponent]

@@ -1,6 +1,7 @@
 import { Component, NgZone, OnInit } from '@angular/core';
 import { routerTransition } from './router.animations';
 import { Router, NavigationEnd } from '@angular/router';
+import {SlimLoadingBarService} from 'ng2-slim-loading-bar'
 
 @Component({
   selector: 'app-root',
@@ -16,7 +17,8 @@ export class AppComponent implements OnInit {
   lastScrollTop: number = 0;
   direction: string = "";
 
-  constructor(lc: NgZone, private router: Router) {
+  constructor(lc: NgZone, private slimLoadingBarService: SlimLoadingBarService, private router: Router) {
+    
     window.onscroll = () => {
       let st = window.pageYOffset;
       let dir = '';
@@ -31,6 +33,21 @@ export class AppComponent implements OnInit {
       });
     };
   }
+  
+  startLoading() {
+        this.slimLoadingBarService.start(() => {
+            console.log('Loading complete');
+        });
+    }
+ 
+    stopLoading() {
+        this.slimLoadingBarService.stop();
+    }
+ 
+    completeLoading() {
+        this.slimLoadingBarService.complete();
+    }
+  
   ngOnInit() {
         this.router.events.subscribe((evt) => {
             if (!(evt instanceof NavigationEnd)) {
